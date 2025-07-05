@@ -7,16 +7,31 @@ let loader = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGRoaGlza2p1Y3JjY
 
 
 async function pictures() {
-    img.src = await loader;
+    let retryLimit = 3;
+    let retry = 1;
+    img.src = loader;
+
+   
+    while (retry < retryLimit) {
+        try {
+            let response = await fetch(URL);
+            if (response.ok) {
+                let data = await response.json();
+                img.src = data.message;
+                return;
+            }
+        } catch {
+            lastStatus = 0;
+        }
+        retry++;
+    }
+
+    let errorCode = lastStatus || 500;
+    img.src = `https://http.dog/${errorCode}.jpg`;
+    alert(`Failed to load dog picture. Error code: ${errorCode}`);
     
-    let response = await fetch(URL);
-
-    let data = await response.json();
-
-    img.src = data.message;
 }
 
 btn.addEventListener("click", pictures);
 
-console.log("hello");
 
