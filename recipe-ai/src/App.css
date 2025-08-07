@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  text-align: center;
+}
+.response {
+  max-width: 800px;
+
+  margin: auto;
+  padding: 1rem;
+}

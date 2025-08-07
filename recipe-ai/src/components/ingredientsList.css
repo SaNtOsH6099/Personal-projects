@@ -1,0 +1,49 @@
+.ingredients-list {
+  max-width: 300px;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 4px rgba(96, 222, 222, 0.853);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.list-item {
+  list-style: none;
+  text-align: start;
+  margin: 0.3rem auto;
+  padding: 0.1rem 1rem;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(-5px) scale(0);
+
+  animation: fadeIn 0.3s forwards;
+}
+
+.no-ingredients {
+  text-align: center;
+  color: #888;
+}
+
+.remove-btn {
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  background-color: #c1edcc;
+  color: rgb(211, 14, 14);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem auto;
+  font-family: "Sour Gummy", sans-serif;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.remove-btn:hover {
+  opacity: 0.8;
+}
+.remove-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
