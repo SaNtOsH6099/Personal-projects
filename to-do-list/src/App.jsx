@@ -5,7 +5,7 @@ import List from "./components/List";
 import "./App.css";
 
 function App() {
-  const [todos, setTodos] = React.useState(["one", "two", "three"]);
+  const [todos, setTodos] = React.useState([]);
   console.log(todos);
   return (
     <>
