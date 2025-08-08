@@ -1,0 +1,13 @@
+.nav {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(59, 58, 58);
+  box-shadow: 0 0 2px rgb(255, 254, 254);
+  border-radius: 0.5rem 0.5rem;
+}
+
+.icon {
+  width: 50px;
+}
