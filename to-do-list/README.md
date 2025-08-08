@@ -1,6 +1,6 @@
 # 📝 To-Do List App
 
-A simple and elegant To-Do List application built using **React**. This app allows users to:
+A simple and elegant To-Do List application built using **React**. This app allows users to :
 
 - Add tasks dynamically
 - Remove the last task
