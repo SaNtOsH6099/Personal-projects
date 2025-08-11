@@ -7,15 +7,14 @@ Test your knowledge across multiple categories and difficulty levels while enjoy
 
 ## 📸 Preview
 
-![Quiz Start Menu Screenshot](./src/assets/quiz-preview.png)  
-![Quiz App Screenshot](./src/assets/second.png)  
-_(Replace with an actual screenshot of your app inside `src/assets`)_
+![Quiz Start Menu Screenshot](./src/assets/quiz-preview.png)
+
+![Quiz App Screenshot](./src/assets/second.png)
 
 ---
 
 **GIF Preview:**  
-![Quiz App Demo](./src/assets/demo.gif)  
-_(GIF version auto-plays for a quick look)_
+![Quiz App Demo](./src/assets/demo.gif)
 
 ---
 
