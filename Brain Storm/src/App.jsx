@@ -26,9 +26,6 @@ function App() {
   };
 
   React.useEffect(() => {
-    console.log(trivias);
-  }, [trivias]);
-  React.useEffect(() => {
     if (!isStarted) {
       setTrivias({ questions: [], options: [], answers: [] });
     }
@@ -43,7 +40,7 @@ function App() {
         className={`container ${isStarted ? "start-active" : "start-initial"}`}
       >
         <div className="choice-menu box box1">
-          <GenreDropdown genre={genre} setGenre={setGenre} />
+          <GenreDropdown setGenre={setGenre} />
           <Difficulty difficulty={difficulty} setDifficulty={setDifficulty} />
           <StartButton
             genre={genre}
