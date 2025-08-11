@@ -25,9 +25,8 @@ Test your knowledge across multiple categories and difficulty levels while enjoy
 - ✅ **Answer Selection** – Single-click answers
 - 🚫 **Next button disabled until an answer is selected**
 - 🔄 **Animations** – Smooth start-game and panel transitions
-- 📊 **Score Tracking** – Live score updates & final results
+- 📊 **Score Tracking** – score updates & final results
 - 📝 **Answer Review** – See your chosen answer alongside the correct one
-- 📱 **Responsive Design** – Works on desktop and mobile
 
 ---
 
@@ -36,7 +35,7 @@ Test your knowledge across multiple categories and difficulty levels while enjoy
 - **React** – Frontend UI and state management
 - **HTML5 & CSS3** – Layout, styling & custom animations
 - **JavaScript (ES6+)** – App logic
-- _(Optional)_ Trivia API – For fetching live quiz data
+- **Groq Cloud API**– For fetching live quiz data
 
 ---
 
