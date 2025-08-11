@@ -1,0 +1,109 @@
+.options-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* border: 1px solid red; */
+  gap: 0.4rem; /* small gap between rows */
+}
+
+.opt {
+  display: flex;
+  align-items: center; /* <- Ensures both radio circle and label vertical center */
+  gap: 1rem;
+  padding: 0.3rem 0; /* Optional: vertical breathing space */
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Hides the native radio button */
+.opt input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.opt span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  transition: all 0.3s;
+  background: #fff;
+}
+
+.opt input[type="radio"]:checked + span::before {
+  background: #4caf50;
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+}
+
+/* Hover effect */
+.opt:hover span::before {
+  border-color: #4caf50;
+}
+
+.question-container {
+  padding: 1rem;
+}
+
+.next-btn {
+  margin: 2rem 0 1rem;
+}
+
+.start-btn,
+.game-btn {
+  background-color: rgba(179, 241, 170, 0.741);
+  color: rgb(36, 34, 32);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px rgb(24, 95, 5);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.start-btn:active,
+.game-btn:active {
+  transform: scale(0.95);
+}
+
+.results {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.correct-title {
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+.correct {
+  color: #4caf50;
+  text-shadow: 1px 1px 1px black;
+}
+.ans {
+  color: rgb(221, 166, 55);
+  text-shadow: 1px 1px 1px black;
+}
+.correct-list {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: auto;
+}
+
+.correct-list-items {
+  list-style-position: inside;
+  text-shadow: 1px 1px 1px rgba(109, 109, 109, 0.371);
+}
+.result-box {
+  padding-bottom: 2rem;
+}

@@ -1,0 +1,20 @@
+nav {
+  /* border: 1px solid white; */
+  box-shadow: 0 0 2px rgb(100, 99, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    to left,
+    rgba(167, 218, 244, 0.8),
+    rgba(58, 200, 225, 0.749)
+  );
+}
+.icon {
+  width: 80px;
+}
+nav > h1 {
+  margin: 0.5rem;
+}

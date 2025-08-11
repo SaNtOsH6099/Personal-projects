@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Sour Gummy", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(48, 44, 44, 0.993);
+  background: linear-gradient(
+    to right,
+    rgba(167, 218, 244, 0.8),
+    rgba(58, 200, 225, 0.749)
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

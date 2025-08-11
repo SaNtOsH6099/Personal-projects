@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+main {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+.choice-menu {
+  max-width: 400px;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 2rem 0;
+
+  margin: auto;
+  background: linear-gradient(
+    to left,
+    rgba(167, 218, 244, 0.8),
+    rgba(58, 200, 225, 0.749)
+  );
+  box-shadow: 2px 2px 4px black;
+}
+.game-box {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(167, 218, 244, 0.8),
+    rgba(58, 200, 225, 0.749)
+  );
+  box-shadow: 2px 2px 4px black;
+  border-radius: 0 1rem 1rem 0;
+}
+
+button,
+select {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+@keyframes slide-in {
+  0% {
+    width: 0;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ===== Initial State ===== */
+.container.start-initial {
+  justify-content: center;
+}
+
+.container.start-initial .box1 {
+  flex: 0 0 auto;
+}
+
+.container.start-initial .box2 {
+  opacity: 0;
+  width: 0;
+  flex: 0 0 0;
+  overflow: hidden;
+}
+
+/* ===== Active State ===== */
+.container.start-active {
+  justify-content: flex-start;
+}
+
+.container.start-active .box1 {
+  flex: 0 0 30%;
+  animation: slide-left 0.6s ease forwards;
+}
+
+.container.start-active .box2 {
+  flex: 1 1 auto;
+  animation: slide-in 0.5s ease forwards;
+}

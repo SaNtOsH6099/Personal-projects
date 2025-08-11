@@ -1,0 +1,24 @@
+#genre {
+  width: 150px;
+  padding: 0.5rem;
+  background-color: rgba(179, 241, 170, 0.741);
+  color: black;
+  /* font-weight: 600; */
+
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 1px black;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.header1 {
+  text-shadow: 1px 1px 1px rgba(41, 43, 39, 0.877);
+  margin: 0.5rem 0;
+  color: rgba(28, 96, 232, 0.802);
+}
+
+#genre:hover,
+#genre:focus {
+  border: 2px solid white;
+}
